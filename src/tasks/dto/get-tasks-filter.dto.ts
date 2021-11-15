@@ -1,7 +1,7 @@
-import { IsEnum, IsOptional, IsString } from "class-validator";
-import { TaskStatus } from "../task.status.enum ";
+import { IsEnum, IsOptional, IsString } from 'class-validator';
+import { TaskStatus } from '../task.status.enum ';
 
-export class  GetTaskFilterDto {
+export class GetTaskFilterDto {
 	// otional question marks do not work at runtime
 	@IsOptional()
 	@IsEnum(TaskStatus)
@@ -9,5 +9,5 @@ export class  GetTaskFilterDto {
 
 	@IsOptional()
 	@IsString()
-	search?: string
+	search?: string;
 }
